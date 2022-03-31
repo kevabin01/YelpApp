@@ -85,7 +85,6 @@ dependencies {
     // Lifecycle Components
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycleExtensionVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
-    implementation 'com.google.android.gms:play-services-maps:18.0.2'
     kapt "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion"
 
     // Room components
@@ -129,6 +128,7 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$glideVersion"
     kapt "com.github.bumptech.glide:compiler:$glideVersion"
 
-    // GMS
-    implementation 'com.google.android.gms:play-services-location:19.0.1'
+    // Google Mobile Services
+    implementation "com.google.android.gms:play-services-location:$gmsLocationVersion"
+    implementation "com.google.android.gms:play-services-maps:$gmsMapsVersion"
 }

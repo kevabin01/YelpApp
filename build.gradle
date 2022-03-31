@@ -6,21 +6,22 @@ buildscript {
         minSdkVersion = 21
 
         gradleVersion = '7.1.2'
+        kotlinVersion = '1.6.10'
         googleServicesVersion = '4.3.10'
+        crashlyticsVersion = '2.5.2'
+        mapsPluginVersion = '2.0.1'
 
         roomVersion = '2.4.2'
         navigationVersion = '2.4.1'
-        kotlinVersion = '1.6.10'
         appCompatVersion = '1.4.1'
-        crashlyticsVersion = '2.5.2'
         materialDesignVersion = '1.5.0'
         coroutinesVersion = '1.6.0-native-mt'
         lifecycleExtensionVersion = '2.2.0'
         lifecycleVersion = '2.4.1'
         pagingVersion = '3.1.1'
         multiDexVersion = '2.0.1'
-        glideVersion = '4.13.1'
-        circleImageVersion = '3.1.0'
+        gmsLocationVersion = '19.0.1'
+        gmsMapsVersion = '18.0.2'
 
         // Firebase
         firebaseCoreVersion = '20.1.2'
@@ -53,7 +54,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "com.google.gms:google-services:$googleServicesVersion"
         classpath "com.google.firebase:firebase-crashlytics-gradle:$crashlyticsVersion"
-        classpath 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.0'
+        classpath "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:$mapsPluginVersion"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
