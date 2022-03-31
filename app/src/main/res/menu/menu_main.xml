@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionSearch"
+        android:title="@string/titleSearch"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/actionList"
+        android:title="@string/textVistaLista"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionMap"
+        android:title="@string/textVistaMapa"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionLogout"
+        android:title="@string/titleLogout"
+        android:icon="@drawable/ic_logout"
+        app:showAsAction="never" />
+</menu>

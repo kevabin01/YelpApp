@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	app:startDestination="@id/navigationLogin">
+
+	<fragment
+		android:id="@+id/navigationLogin"
+		android:name="com.codequark.yelp.ui.fragments.LoginFragment"
+		android:label="@string/titleLogin"
+		tools:layout="@layout/fragment_login" >
+
+		<action
+			android:id="@+id/action_navigationLogin_to_navigationRegister"
+			app:destination="@id/navigationRegister" />
+
+	</fragment>
+
+	<fragment
+		android:id="@+id/navigationRegister"
+		android:name="com.codequark.yelp.ui.fragments.RegisterFragment"
+		android:label="@string/titleRegister"
+		tools:layout="@layout/fragment_register" >
+
+		<action
+			android:id="@+id/action_navigationRegister_to_navigationSearch"
+			app:destination="@id/navigationSearch" />
+
+	</fragment>
+
+	<fragment
+		android:id="@+id/navigationHistory"
+		android:name="com.codequark.yelp.ui.fragments.HistoryFragment"
+		android:label="@string/titleHistory"
+		tools:layout="@layout/fragment_history" />
+
+	<fragment
+		android:id="@+id/navigationMap"
+		android:name="com.codequark.yelp.ui.fragments.SearchMapsFragment"
+		android:label="@string/titleMapa"
+		tools:layout="@layout/fragment_history" >
+
+		<action
+			android:id="@+id/action_navigationMap_to_navigationHistory"
+			app:destination="@id/navigationHistory" />
+
+	</fragment>
+
+	<fragment
+		android:id="@+id/navigationSearch"
+		android:name="com.codequark.yelp.ui.fragments.SearchFragment"
+		android:label="@string/titleSearch"
+		tools:layout="@layout/fragment_search" >
+
+		<action
+			android:id="@+id/action_navigationSearch_to_navigationMap"
+			app:destination="@id/navigationMap" />
+
+		<action
+			android:id="@+id/action_navigationSearch_to_navigationHistory"
+			app:destination="@id/navigationHistory" />
+
+	</fragment>
+
+</navigation>

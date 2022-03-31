@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="150dp"
+	android:layout_marginTop="10dp"
+	android:layout_marginStart="10dp"
+	android:layout_marginEnd="10dp"
+	android:layout_marginBottom="5dp"
+	app:cardCornerRadius="@dimen/cornerCardView"
+	app:cardBackgroundColor="@color/backgroundCardView">
+
+	<RelativeLayout
+		android:id="@+id/container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		style="@style/RippleEffect">
+
+		<LinearLayout
+			android:id="@+id/containerImage"
+			android:layout_width="100dp"
+			android:layout_height="match_parent"
+			style="@style/RippleEffect.Circular">
+
+			<de.hdodenhof.circleimageview.CircleImageView
+				android:id="@+id/ivImagen"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:src="@color/colorPrimary"
+				android:padding="10dp"
+				style="@style/RippleEffect.Circular" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="5dp"
+			android:layout_toEndOf="@id/containerImage"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tvNombre"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:text="@string/titleAppName"
+				android:textColor="@color/textColor"
+				android:textSize="@dimen/textSizeNormal"
+				android:textStyle="bold"
+				android:layout_marginBottom="5dp"
+				android:gravity="center_vertical"
+				android:singleLine="true" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:text="@string/titleCategoria"
+				android:textColor="@color/textColor"
+				android:textSize="@dimen/textSizeMedium"
+				android:textStyle="bold"
+				android:gravity="center_vertical"
+				android:singleLine="true" />
+
+			<TextView
+				android:id="@+id/tvCategoria"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:text="@string/titleAppName"
+				android:textColor="@color/textColor"
+				android:textSize="@dimen/textSizeMedium"
+				android:gravity="center_vertical"
+				android:singleLine="true" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:text="@string/titleDireccion"
+				android:textColor="@color/textColor"
+				android:textSize="@dimen/textSizeMedium"
+				android:textStyle="bold"
+				android:gravity="center_vertical"
+				android:singleLine="true" />
+
+			<TextView
+				android:id="@+id/tvDireccion"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:text="@string/titleAppName"
+				android:textColor="@color/textColor"
+				android:textSize="@dimen/textSizeMedium"
+				android:gravity="center_vertical"
+				android:singleLine="true" />
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

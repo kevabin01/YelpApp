@@ -1,0 +1,75 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        compileSdkVersion = 31
+        targetSdkVersion = 31
+        minSdkVersion = 21
+
+        gradleVersion = '7.1.2'
+        googleServicesVersion = '4.3.10'
+
+        roomVersion = '2.4.2'
+        navigationVersion = '2.4.1'
+        kotlinVersion = '1.6.10'
+        appCompatVersion = '1.4.1'
+        crashlyticsVersion = '2.5.2'
+        materialDesignVersion = '1.5.0'
+        coroutinesVersion = '1.6.0-native-mt'
+        lifecycleExtensionVersion = '2.2.0'
+        lifecycleVersion = '2.4.1'
+        pagingVersion = '3.1.1'
+        multiDexVersion = '2.0.1'
+        glideVersion = '4.13.1'
+        circleImageVersion = '3.1.0'
+
+        // Firebase
+        firebaseCoreVersion = '20.1.2'
+        firebaseAnalyticsVersion = '20.1.2'
+        firebaseCrashlyticsVersion = '18.2.9'
+        firebaseAuthVersion = '21.0.3'
+
+        // ImageManager
+        glideVersion = '4.13.1'
+        circleImageVersion = '3.1.0'
+
+        // GSON
+        gsonVersion = '2.9.0'
+
+        // RequestManager
+        retrofitVersion = '2.9.0'
+        okHttpVersion = '5.0.0-alpha.6'
+    }
+
+    repositories {
+        google() // Google's Maven repository
+        mavenCentral()
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradleVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "com.google.gms:google-services:$googleServicesVersion"
+        classpath "com.google.firebase:firebase-crashlytics-gradle:$crashlyticsVersion"
+        classpath 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google() // Google's Maven repository
+        mavenCentral()
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

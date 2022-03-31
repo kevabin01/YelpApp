@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="@dimen/cornerCardView"
+    app:cardBackgroundColor="@color/backgroundCardView">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layoutItemHeaderSize"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/layoutItemHeaderSize"
+                android:layout_marginEnd="@dimen/layoutItemHeaderSize"
+                style="@style/RippleEffect.Circular">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/titleAppName"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSizeNormal"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:lines="1" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/layoutItemHeaderSize"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:padding="16dp"
+                android:contentDescription="@string/titleAppName"
+                app:srcCompat="@drawable/ic_image"
+                app:tint="@color/backgroundLayoutIcon" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layoutItemHeight"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@color/colorBlack"
+            android:contentDescription="@string/titleAppName"
+            style="@style/RippleEffect" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

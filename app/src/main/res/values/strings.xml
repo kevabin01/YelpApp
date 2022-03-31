@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="titleAppName">YelpApp</string>
+
+	<string name="titleLogin">Iniciar sesión</string>
+	<string name="titleRegister">Registro</string>
+	<string name="titleSearch">Buscar</string>
+	<string name="titleHistory">Historial</string>
+	<string name="titleEmail">Correo electrónico</string>
+	<string name="titlePassword">Contraseña</string>
+	<string name="titleRegistrarse">Registrarse</string>
+	<string name="titleLogout">Cerrar sesión</string>
+	<string name="titleEntendido">Entendido</string>
+	<string name="titleLatitude">Latitud</string>
+	<string name="titleLongitude">Longitud</string>
+	<string name="titleCategoria">Categoría:</string>
+	<string name="titleDireccion">Dirección:</string>
+	<string name="titleMapa">Mapa</string>
+
+	<string name="textLogin" translatable="false">Iniciar sesión</string>
+	<string name="textError">Ha ocurrido un error, inténtalo de nuevo</string>
+	<string name="textCheckInternet">Compruebe su conexión a internet</string>
+	<string name="textUsuarioVacio">El usuario no puede estár vacío</string>
+	<string name="textPasswordVacio">La contraseña no puede estár vacía</string>
+	<string name="textErrorCampoVacio">El campo no puede quedar vacío</string>
+	<string name="textErrorCampoLongitud">El campo debe ser de al menos 6 caracteres</string>
+	<string name="textUsuarioInvalido">Usuario invalido, verifiquelo por favor</string>
+	<string name="textPasswordInvalido">Contraseña invalida, verifiquelo por favor</string>
+	<string name="textUsuarioExiste">Este usuario ya existe, intente con otro</string>
+	<string name="textUsuarioNoExiste">No se encuentra ninguna cuenta registrada</string>
+	<string name="textErrorLoginDemasiadosIntentos">Se han realizado demasiados intentos, intente de nuevo en 15 minutos</string>
+	<string name="textEnterSearch">Ingrese su búsqueda</string>
+	<string name="textHistory">Historial de visualización</string>
+	<string name="textNoResults">Sin resultados</string>
+	<string name="textNoReviews">Sin reseñas para mostrar</string>
+	<string name="textTryNewSearch">Intente con una nueva búsqueda</string>
+	<string name="textVistaLista">Vista: Lista</string>
+	<string name="textVistaMapa">Vista: Mapa</string>
+
+	<!-- SharedPreferences -->
+	<string name="key_firebase_id">key_firebaseId</string>
+	<string name="key_email">key_email</string>
+	<string name="key_password">key_password</string>
+
+	<!-- API Key -->
+	<string name="api_key_google_maps">AIzaSyDqnV07MpdU8-sCr9LgHin01CecJ_0pctA</string>
+
+	<!-- Location -->
+	<string name="noLocationDetected">No se detectó ninguna ubicación. Asegúrese de que la ubicación esté habilitada en el dispositivo.</string>
+	<string name="permissionRationale">Se necesita permiso de ubicación para la funcionalidad principal.</string>
+	<string name="permissionDeniedExplanation">El permiso fue denegado, pero es necesario para la funcionalidad principal.</string>
+</resources>

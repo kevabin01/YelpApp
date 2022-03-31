@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<include
+		android:id="@+id/layoutToolbar"
+		layout="@layout/toolbar_activity" />
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_above="@id/bottomNavigationView"
+			android:background="@color/backgroundPrimary">
+
+			<androidx.coordinatorlayout.widget.CoordinatorLayout
+				android:id="@+id/coordinatorLayout"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/backgroundPrimary"
+				android:theme="@style/Style.CoordinatorLayout">
+
+				<androidx.fragment.app.FragmentContainerView
+					android:id="@+id/navHostFragment"
+					android:name="androidx.navigation.fragment.NavHostFragment"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					app:defaultNavHost="true"
+					app:navGraph="@navigation/mobile_navigation" />
+
+			</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+		</RelativeLayout>
+
+		<com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+			android:id="@+id/fab"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@id/bottomNavigationView"
+			android:layout_alignParentBottom="false"
+			android:contentDescription="@string/titleAppName"
+			style="@style/Style.FloatingActionButton.Search" />
+
+		<com.google.android.material.bottomnavigation.BottomNavigationView
+			android:id="@+id/bottomNavigationView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/backgroundBottomNav"
+			android:layout_alignParentBottom="true"
+			app:itemTextColor="@color/textColor"
+			app:labelVisibilityMode="labeled"
+			app:menu="@menu/bottom_nav_menu"
+			app:itemIconSize="25dp" />
+
+	</RelativeLayout>
+
+</LinearLayout>
